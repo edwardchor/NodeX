@@ -1,0 +1,19 @@
+<div id="stage" class="jumbotron">
+    <h1>PJ1: 音频可视化 </h1>
+    <h2>正在播放： Uptown Funk By Bruno Mars</h2>
+    <p>此PJ通过html5内置web audioAPI实现，音频流从source出发，在其到达播放器之前获取比特数据，通过快速傅立叶变换获取每个时间点不同频率值，再通过canvas实时绘制环状波形图。</p>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <canvas id="cvs1" width="1170px" height="900px"></canvas>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-12">
+            <audio id="music" src="../media/uptown_funk.mp3" preload="auto" autoplay controls loop></audio>
+        </div>
+    </div>
+
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="ui">
+    <h1>PJ2: 编程实现一个UI控件</h1>
+    <div>
+        <h2>通过拖拽每一个卡片来排序：</h2>
+        <p> 此PJ通过Angular Material实现</p>
+    </div>
+    <div sv-root >
+        <div sv-part="Array1"layout="row" flex >
+            <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="item in Array1" sv-element flex>
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">{{item}}</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                        <div class="md-media-lg card-media"></div>
+                    </md-card-title-media>
+                </md-card-title>
+            </md-card>
+        </div>
+    </div>
+
+    <md-button class="md-raised" ui-sref="ui">RESET</md-button>
+</div>
